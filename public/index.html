@@ -16,6 +16,9 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
+    <!-- New Tweet CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
@@ -29,23 +32,18 @@
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
     </nav>
+
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <p> Lorem ipsum dolor sit amet, an vix quot lucilius mandamus, mea hinc nonumy ei. Convenire efficiendi et vel, sea ullum essent eu. Eros civibus dissentiunt an pro, mea ne altera cotidieque reformidans. Habeo fugit sed eu, dolore ullamcorper interpretaris est ex. Ne cum democritum reformidans.
-</p><p>
-Qui error verear scriptorem at. Ea inani meliore scaevola qui. Movet instructior ad sed. At reque utamur iisque nam, ius te summo conclusionemque, eum mazim dolore ut. Ei mea pertinax conceptam. Legimus molestie te mel. Ex facilis consectetuer sit, mel elitr soluta legendos ex, ad quo utroque facilisi.</p>
-<p>
-Diam modus ex pri, tota mnesarchum eu pri. Latine reprimique eu vel, stet partem ad pri. Ne eos dolore nostrud. Debet tantas utamur in usu, ad delenit suavitate pri, per ad legimus interesset.</p>
-<p>
-Id assum zril nec, sea periculis intellegam ullamcorper ut, ex est habeo audire vituperata. Mei verterem dignissim mediocritatem ex, in iudico abhorreant mediocritatem sit. At vix alienum omittantur. Ludus reprimique vel te, eos dicam munere ut. Ut vix officiis euripidis, id natum tritani blandit mea.
-</p><p>
-Pro ad rebum dolorum, ei prompta persecuti expetendis vim, utinam iriure disputationi no vis. Nam numquam volutpat omittantur an. Eos eu rebum utinam scaevola, urbanitas percipitur ne sea. Mel cu semper qualisque. An mazim dictas propriae qui, ea vivendum consulatu vis.</p>
-<p>
-Pro ad rebum dolorum, ei prompta persecuti expetendis vim, utinam iriure disputationi no vis. Nam numquam volutpat omittantur an. Eos eu rebum utinam scaevola, urbanitas percipitur ne sea. Mel cu semper qualisque. An mazim dictas propriae qui, ea vivendum consulatu vis.</p>
-<p>
-Pro ad rebum dolorum, ei prompta persecuti expetendis vim, utinam iriure disputationi no vis. Nam numquam volutpat omittantur an. Eos eu rebum utinam scaevola, urbanitas percipitur ne sea. Mel cu semper qualisque. An mazim dictas propriae qui, ea vivendum consulatu vis.</p>
-<p>
-Pro ad rebum dolorum, ei prompta persecuti expetendis vim, utinam iriure disputationi no vis. Nam numquam volutpat omittantur an. Eos eu rebum utinam scaevola, urbanitas percipitur ne sea. Mel cu semper qualisque. An mazim dictas propriae qui, ea vivendum consulatu vis.</p>
+      <!-- New Tweet Form -->
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form method="POST" action="/tweets">
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
     </main>
 
   </body>
