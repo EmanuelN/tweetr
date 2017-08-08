@@ -1,0 +1,44 @@
+#tweets {
+  border: 2px lightgrey solid;
+  border-radius: 5px;
+  margin: 2em 2em;
+}
+#tweets header {
+  background-color: #eaeeef;
+  overflow: auto;
+}
+
+#tweets img {
+  height: 50px;
+  width: 50px;
+  float:left;
+  margin: 5px 5px;
+}
+
+#tweets .handle {
+  float: right;
+  margin-top: -20px;
+  color: #93979e;
+  font-weight: lighter;
+}
+
+#tweets .name{
+  margin-top: 10px;
+  color: #5c5f63;
+  font-weight: bold;
+}
+
+#tweets p {
+  color: #758fb5;
+  margin: 2em 1em;
+}
+
+#tweets footer {
+  border-top: 1px solid lightgrey;
+  margin-top: 1em;
+}
+
+#tweets footer p {
+ margin: 0.5em;
+ font-size: 12px;
+}
