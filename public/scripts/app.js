@@ -13,11 +13,41 @@ function escape(str) {
 }
 
 function createTweetElement(tweet){
+
   const safeText = escape(tweet.content.text);
+
   const days = function(ms){
-    let days = Math.floor(ms/1000/60/60/24)
-    return days
+    const days = Math.floor(ms/1000/60/60/24);
+    return days;
   }
+  const hours = function(ms){
+    const hours = Math.floor(ms/1000/60/60);
+    return hours;
+  }
+  const minutes = function(ms){
+    const minutes = Math.floor(ms/1000/60);
+    return minutes
+  }
+
+  const time = function() {
+    let now = Date.now()
+    const tweetAge = (now - tweet.created_at);
+    if (tweetAge > 86400000){
+      const output = days(tweetAge) + " days ago";
+      return output;
+    } else if (tweetAge >= 3600000) {
+      const output = hours(tweetAge) + " hours ago";
+      return output;
+    } else if (tweetAge >= 60000 && minutes(tweetAge)-16 !== 0){
+      const output = minutes(tweetAge)-16 + "minutes ago";
+      return output;
+    } else {
+      const output = "less than a minute ago"
+      return output;
+    }
+  }
+
+
   const html=`
         <article class="tweet">
           <header>
@@ -29,7 +59,7 @@ function createTweetElement(tweet){
             <p>${safeText}</p>
           </div>
           <footer>
-            <p>${days(Date.now() - tweet.created_at)} days ago</p>
+            <p>${time()}</p>
             <img src="images/flag.png">
             <img src="/images/retweet.jpg">
             <img src="images/heart.png">
