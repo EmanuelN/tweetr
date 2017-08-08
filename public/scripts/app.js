@@ -40,6 +40,8 @@ function createTweetElement(tweet){
 }
 
 function renderTweets(data){
+  //empties tweets container
+  $('#tweets').html('');
   data.forEach(function(element){
     $('#tweets').append(createTweetElement(element));
   })
@@ -54,6 +56,7 @@ function postTweet(){
       $.post('/tweets', $(this).serialize());
       $("#new-tweet textarea").val('');
       alert('posted!');
+      loadTweets();
     } else {
       alert('Post is too long!');
     }
