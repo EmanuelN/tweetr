@@ -92,4 +92,8 @@ function renderTweets(data){
 
 $(function() {
   renderTweets(tweetData);
+  $('#new-tweet').submit(function(elm){
+    elm.preventDefault();
+    $.post('/tweets', $(this).serialize());
+  });
 });
