@@ -48,8 +48,9 @@ function renderTweets(data){
 function postTweet(){
   $('#new-tweet').submit(function(elm){
     elm.preventDefault();
-    if ($(this).serializeArray()[0].value.length <= 140){
-      console.log($(this).serializeArray()[0].value.length)
+    if ($(this).serializeArray()[0].value.length === 0){
+      alert('Post is empty!');
+    } else if ($(this).serializeArray()[0].value.length <= 140){
       $.post('/tweets', $(this).serialize());
       $("#new-tweet textarea").val('');
       alert('posted!');
