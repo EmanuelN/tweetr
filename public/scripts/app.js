@@ -95,5 +95,7 @@ $(function() {
   $('#new-tweet').submit(function(elm){
     elm.preventDefault();
     $.post('/tweets', $(this).serialize());
+    $("#new-tweet textarea").val('');
+    alert('posted!');
   });
 });
