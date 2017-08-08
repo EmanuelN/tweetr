@@ -48,9 +48,17 @@ const tweetData = [
     },
     "created_at": 1461113796368
   }
-]
+  ]
+
+// Escape text to make it safe
+function escape(str) {
+  var div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
 function createTweetElement(tweet){
+  const safeText = escape(tweet.content.text);
   const days = function(ms){
     let days = Math.floor(ms/1000/60/60/24)
     return days
@@ -63,7 +71,7 @@ function createTweetElement(tweet){
             <div class="handle">${tweet.user.handle}</div>
           </header>
           <div>
-            <p>${tweet.content.text}</p>
+            <p>${safeText}</p>
           </div>
           <footer>
             <p>${days(Date.now() - tweet.created_at)} days ago</p>
