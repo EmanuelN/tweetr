@@ -7,38 +7,59 @@
   background-color: #eaeeef;
   overflow: auto;
 }
-
 #tweets img {
   height: 50px;
   width: 50px;
   float:left;
   margin: 5px 5px;
 }
-
 #tweets .handle {
   float: right;
+  margin-right: 5px;
   margin-top: -20px;
   color: #93979e;
   font-weight: lighter;
 }
-
 #tweets .name{
   margin-top: 10px;
   color: #5c5f63;
   font-weight: bold;
 }
-
 #tweets p {
   color: #758fb5;
   margin: 2em 1em;
 }
-
 #tweets footer {
   border-top: 1px solid lightgrey;
   margin-top: 1em;
 }
-
 #tweets footer p {
  margin: 0.5em;
  font-size: 12px;
+}
+#tweets footer img{
+  display: none;
+  float: right;
+  height: 12px;
+  width: 12px;
+  margin-top: -20px;
+}
+#tweets footer img#two{
+  margin-right: 30px;
+}
+#tweets footer img#three{
+  margin-right: 55px;
+}
+
+#tweets:hover {
+  border: 2px grey solid;
+}
+#tweets:hover .name{
+  color: #030463;
+}
+#tweets:hover .handle{
+  color: #636363;
+}
+#tweets:hover footer img{
+  display:block;
 }
