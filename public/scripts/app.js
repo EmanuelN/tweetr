@@ -64,7 +64,7 @@ function createTweetElement(tweet){
     return days
   }
   const html=`
-        <article>
+        <article class="tweet">
           <header>
             <img src=${tweet.user.avatars.regular}>
             <div class="name">${tweet.user.name}</div>
@@ -90,12 +90,21 @@ function renderTweets(data){
   })
 }
 
-$(function() {
-  renderTweets(tweetData);
+function postTweet(){
   $('#new-tweet').submit(function(elm){
     elm.preventDefault();
-    $.post('/tweets', $(this).serialize());
-    $("#new-tweet textarea").val('');
-    alert('posted!');
+    if ($(this).serializeArray()[0].value.length <= 140){
+      console.log($(this).serializeArray()[0].value.length)
+      $.post('/tweets', $(this).serialize());
+      $("#new-tweet textarea").val('');
+      alert('posted!');
+    } else {
+      alert('Post is too long!');
+    }
   });
+}
+
+$(function() {
+  renderTweets(tweetData);
+  postTweet();
 });
