@@ -43,7 +43,7 @@ function renderTweets(data){
   //empties tweets container
   $('#tweets').html('');
   data.forEach(function(element){
-    $('#tweets').append(createTweetElement(element));
+    $('#tweets').prepend(createTweetElement(element));
   })
 }
 
@@ -55,7 +55,6 @@ function postTweet(){
     } else if ($(this).serializeArray()[0].value.length <= 140){
       $.post('/tweets', $(this).serialize());
       $("#new-tweet textarea").val('');
-      alert('posted!');
       loadTweets();
     } else {
       alert('Post is too long!');
