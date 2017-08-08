@@ -53,13 +53,13 @@ function postTweet(){
     if ($(this).serializeArray()[0].value.length === 0){
       alert('Post is empty!');
     } else if ($(this).serializeArray()[0].value.length <= 140){
-      $.post('/tweets', $(this).serialize());
+      $.post('/tweets', $(this).serialize(), loadTweets);
       $("#new-tweet textarea").val('');
-      loadTweets();
     } else {
       alert('Post is too long!');
     }
   });
+
 }
 
 function loadTweets(){
