@@ -22,3 +22,21 @@
   height: 80px;
   float: left;
 }
+
+#nav-bar .buttons {
+  float: right;
+  margin: 10px 1em;
+}
+
+#nav-bar .compose {
+  border: black solid 1px;
+  border-radius: 5px;
+  background-color: white;
+  height: 60px;
+  width: 120px;
+}
+
+#nav-bar .compose:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}

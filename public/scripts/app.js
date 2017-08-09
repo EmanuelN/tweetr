@@ -16,6 +16,7 @@ function createTweetElement(tweet){
 
   const safeText = escape(tweet.content.text);
 
+// how long ago was the tweet created?
   const days = function(ms){
     const days = Math.floor(ms/1000/60/60/24);
     return days;
@@ -28,7 +29,6 @@ function createTweetElement(tweet){
     const minutes = Math.floor(ms/1000/60);
     return minutes
   }
-
   const time = function() {
     let now = Date.now()
     const tweetAge = (now - tweet.created_at);
@@ -98,7 +98,16 @@ function loadTweets(){
   });
 }
 
+function compose(){
+  $('#nav-bar .compose').on('click', function(){
+    $('.new-tweet').slideToggle(400, function(){
+      $('.new-tweet textarea').focus();
+    });
+  });
+}
+
 $(function() {
   loadTweets();
   postTweet();
+  compose();
 });
