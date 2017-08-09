@@ -1,41 +1,27 @@
 .new-tweet {
- background-color: lightgrey;
- border-radius: 5px;
- margin: 0 2em;
- height: 160px;
-}
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 0 2em;
+  height: 160px; }
+  .new-tweet h2 {
+    padding-top: 16px;
+    margin: 0em 1em 1em;
+    border-bottom: 2px solid black; }
+  .new-tweet textarea {
+    margin: 0 2.5%;
+    width: 95%; }
+  .new-tweet input {
+    margin: 5px 2.5% 10px; }
+  .new-tweet .counter {
+    margin: 5px 5%;
+    float: right; }
+  .new-tweet .overflow {
+    color: red; }
+  .new-tweet .transparent {
+    opacity: 0.7; }
+  .new-tweet #error {
+    font-size: 14px; }
+  .new-tweet .invisible {
+    opacity: 0; }
 
-.new-tweet h2 {
-  padding-top: 16px;
-  margin: 0em 1em 1em;
-  border-bottom:2px solid black;
-}
-
-.new-tweet textarea {
-  margin: 0 2.5%;
-  width: 95%;
-}
-
-.new-tweet input {
-  margin: 5px 2.5% 10px;
-}
-
-.new-tweet .counter {
-  margin: 5px 5%;
-  float: right;
-}
-
-.overflow {
-  color: red;
-}
-
-.new-tweet .transparent{
-  opacity: 0.7;
-}
-
-#error{
-  font-size: 14px;
-}
-.invisible {
-  opacity: 0;
-}
+/*# sourceMappingURL=new-tweet.css.map */

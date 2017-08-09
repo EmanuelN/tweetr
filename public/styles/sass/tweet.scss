@@ -1,0 +1,60 @@
+article {
+  border: 2px lightgrey solid;
+  border-radius: 5px;
+  margin: 2em 2em;
+  overflow: auto;
+
+  header {
+    opacity: 0.6;
+    background-color: #eaeeef;
+    overflow: auto;
+  }
+  img {
+    height: 50px;
+    width: 50px;
+    float:left;
+    margin: 5px 5px;
+  }
+  .handle {
+    float: right;
+    margin-right: 5px;
+    margin-top: -20px;
+    color: #636363;
+    font-weight: lighter;
+  }
+  .name{
+    margin-top: 10px;
+    color: #030463;
+    font-weight: bold;
+  }
+  p {
+    color: #758fb5;
+    margin: 2em 1em;
+  }
+  footer {
+    border-top: 1px solid lightgrey;
+    margin-top: 1em;
+  }
+  footer p {
+    float: left;
+   margin: 0.5em;
+   font-size: 12px;
+  }
+  footer img{
+    display: none;
+    float: right;
+    height: 12px;
+    width: 12px;
+  }
+
+  &:hover {
+    border: 2px grey solid;
+
+    header{
+      opacity: 1;
+    }
+    footer img{
+      display:block;
+    }
+  }
+}

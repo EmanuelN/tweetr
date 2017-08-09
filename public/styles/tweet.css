@@ -2,57 +2,46 @@ article {
   border: 2px lightgrey solid;
   border-radius: 5px;
   margin: 2em 2em;
-  overflow: auto;
-}
-article header {
-  opacity: 0.6;
-  background-color: #eaeeef;
-  overflow: auto;
-}
-article img {
-  height: 50px;
-  width: 50px;
-  float:left;
-  margin: 5px 5px;
-}
-article .handle {
-  float: right;
-  margin-right: 5px;
-  margin-top: -20px;
-  color: #636363;
-  font-weight: lighter;
-}
-article .name{
-  margin-top: 10px;
-  color: #030463;
-  font-weight: bold;
-}
-article p {
-  color: #758fb5;
-  margin: 2em 1em;
-}
-article footer {
-  border-top: 1px solid lightgrey;
-  margin-top: 1em;
-}
-article footer p {
-  float: left;
- margin: 0.5em;
- font-size: 12px;
-}
-article footer img{
-  display: none;
-  float: right;
-  height: 12px;
-  width: 12px;
-}
+  overflow: auto; }
+  article header {
+    opacity: 0.6;
+    background-color: #eaeeef;
+    overflow: auto; }
+  article img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 5px 5px; }
+  article .handle {
+    float: right;
+    margin-right: 5px;
+    margin-top: -20px;
+    color: #636363;
+    font-weight: lighter; }
+  article .name {
+    margin-top: 10px;
+    color: #030463;
+    font-weight: bold; }
+  article p {
+    color: #758fb5;
+    margin: 2em 1em; }
+  article footer {
+    border-top: 1px solid lightgrey;
+    margin-top: 1em; }
+  article footer p {
+    float: left;
+    margin: 0.5em;
+    font-size: 12px; }
+  article footer img {
+    display: none;
+    float: right;
+    height: 12px;
+    width: 12px; }
+  article:hover {
+    border: 2px grey solid; }
+    article:hover header {
+      opacity: 1; }
+    article:hover footer img {
+      display: block; }
 
-article:hover {
-  border: 2px grey solid;
-}
-article:hover header{
-  opacity: 1;
-}
-article:hover footer img{
-  display:block;
-}
+/*# sourceMappingURL=tweet.css.map */
