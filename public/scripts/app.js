@@ -51,13 +51,13 @@ function renderTweets(data){
 function postTweet(){
   $('#new-tweet').submit(function(elm){
     elm.preventDefault();
-    if ($(this).serializeArray()[0].value.length === 0){
-      alert('Post is empty!');
-    } else if ($(this).serializeArray()[0].value.length <= 140){
+    if ($('.counter').text() == 140 || $('.counter').text() < 0){
+      $("#error").removeClass('invisible');
+    } else {
       $.post('/tweets', $(this).serialize(), loadTweets);
       $("#new-tweet textarea").val('');
-    } else {
-      alert('Post is too long!');
+      $("#new-tweet .counter").text('140');
+      $('#error').addClass('invisible');
     }
   });
 }
