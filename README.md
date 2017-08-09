@@ -4,8 +4,11 @@ Tweeter is a simple, single-page Twitter clone.
 
 ## Final Product
 !["URL Index Page"](https://github.com/EmanuelN/tweetr/blob/master/screens/1.png)
+
 !["URL Index Page"](https://github.com/EmanuelN/tweetr/blob/master/screens/2.png)
+You can hide the compose text window
 !["URL Index Page"](https://github.com/EmanuelN/tweetr/blob/master/screens/3.png)
+You can submit new tweets from the compose area!
 ## Dependencies
 
 - Express
