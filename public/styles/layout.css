@@ -32,4 +32,5 @@ body {
   width: 450px;
   margin: auto;
   background-color: white;
+  position: relative;
  }

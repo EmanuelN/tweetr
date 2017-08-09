@@ -1,13 +1,13 @@
 .new-tweet {
  background-color: lightgrey;
  border-radius: 5px;
- margin: 1em 2em;
+ margin: 0 2em;
  height: 160px;
 }
 
 .new-tweet h2 {
   padding-top: 16px;
-  margin: 5% 2.5%;
+  margin: 0em 1em 1em;
   border-bottom:2px solid black;
 }
 
@@ -27,4 +27,8 @@
 
 .overflow {
   color: red;
+}
+
+.new-tweet .transparent{
+  opacity: 0.7;
 }
