@@ -3,7 +3,9 @@
 Tweeter is a simple, single-page Twitter clone.
 
 ## Final Product
-
+!["URL Index Page"](https://github.com/EmanuelN/tweetr/blob/master/screens/1.png)
+!["URL Index Page"](https://github.com/EmanuelN/tweetr/blob/master/screens/2.png)
+!["URL Index Page"](https://github.com/EmanuelN/tweetr/blob/master/screens/3.png)
 ## Dependencies
 
 - Express
